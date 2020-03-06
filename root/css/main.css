@@ -1,0 +1,301 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.info_box, main .link_beer, main .link_brewery, main .link_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  padding: 10rem 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  width: 25%;
+  padding: 1%;
+  background-color: #fed849;
+}
+
+.navbar ul li:hover {
+  background-color: #fecd16;
+}
+
+.navbar ul li a {
+  color: #31302c;
+  font-size: 0.7rem;
+}
+
+header {
+  display: flexbox;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: red;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+header p {
+  font-weight: 700;
+  padding: 2% 0;
+}
+
+header .head_main {
+  background: url(../images/wallArt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_beers {
+  background: url(../images/wallArt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_tap {
+  background: url(../images/wallArt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_jobs {
+  background: url(../images/wallArt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  width: 25%;
+  padding: 1%;
+  background-color: #fed849;
+}
+
+.navbar ul li:hover {
+  background-color: #fecd16;
+}
+
+.navbar ul li a {
+  color: #31302c;
+  font-size: 0.7rem;
+}
+
+body {
+  /* This a comment about the body that will compile into my CSS */
+  background-color: #494842;
+  font-family: "Spartan", "sans-serif";
+  text-shadow: 0px 0px 1px #000;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fed849;
+  padding: 1%;
+}
+
+main .link {
+  text-align: center;
+}
+
+main .link a {
+  color: #ff8a28;
+  margin-left: 10%;
+  font-weight: 700;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+main .link a:hover {
+  color: #ffc28e;
+}
+
+main .link_beer {
+  background: url(../images/beer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .link_brewery {
+  background: url(../images/brewery.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .link_about {
+  background: url(../images/pour.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flexbox;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ff8a28;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+header p {
+  font-weight: 700;
+  padding: 2% 0;
+}
+
+header .head_main {
+  background: url(../images/hops.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_beers {
+  background: url(../images/hops.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_tap {
+  background: url(../images/hops.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .head_jobs {
+  background: url(../images/hops.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_jobs, .main_tap, .main_beers {
+  height: 100vh;
+}
+
+.main_tap {
+  text-align: center;
+}
+
+.main_beers {
+  overflow: auto;
+}
+
+.main_beers:before, .main_beersafter {
+  content: "";
+  display: table;
+}
+
+.main_beers:after {
+  clear: both;
+}
+
+.main_beers .product_info {
+  float: left;
+  width: 32%;
+}
+
+.main_beers .product_info:nth-child(n) {
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.main_beers .product_info img {
+  width: 9rem;
+  height: auto;
+  float: left;
+}
+/*# sourceMappingURL=main.css.map */

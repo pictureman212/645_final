@@ -1,0 +1,13 @@
+//Using list properties and each to create my own framework for margin and padding
+
+$spaceamounts: (1, 2, 3, 4, 5);
+// flow control
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+}

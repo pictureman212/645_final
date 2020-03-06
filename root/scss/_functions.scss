@@ -1,0 +1,17 @@
+//using a map to determine font-weight
+//built in SASS function
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+//using extend
+
+//if else statement
+
+@function rOver_txtColor($color) {
+  @if (lightness($color) > 60) {
+    @return $black_color;
+  } @else {
+    @return #fff;
+  }
+}
