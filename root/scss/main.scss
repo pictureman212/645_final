@@ -1,0 +1,85 @@
+@import "./resets";
+@import "./variables";
+@import "./functions";
+@import "./frameworks";
+@import "./mixins";
+
+@import "./headerContent";
+
+body {
+  /* This a comment about the body that will compile into my CSS */
+  background-color: $background-color;
+  font-family: "Spartan", "sans-serif";
+  text-shadow: 0px 0px 1px #000;
+}
+
+main {
+  width: 90%;
+
+  margin: 0 auto;
+  background-color: $pale-color;
+  padding: 1%;
+
+  //nesting
+  .link {
+    text-align: center;
+
+    a {
+      color: $attention-color;
+      margin-left: 10%;
+      font-weight: weight(bold);
+      font-size: 3em;
+      text-decoration: none;
+
+      &:hover {
+        color: lighten($attention-color, 20%); // sass color modifier
+      }
+    }
+    //implementing extend
+    &_beer {
+      @extend .info_box;
+      background: url(../images/beer.png);
+      @include bgImage;
+    }
+
+    &_brewery {
+      @extend .info_box;
+      background: url(../images/brewery.png);
+      @include bgImage;
+    }
+
+    &_about {
+      @extend .info_box;
+      background: url(../images/pour.png);
+      @include bgImage;
+    }
+  }
+}
+
+%viewHeight {
+  height: 100vh;
+}
+.main_jobs {
+  @extend %viewHeight;
+}
+.main_tap {
+  @extend %viewHeight;
+  text-align: center;
+}
+.main_beers {
+  //using a grid
+  @include clear;
+  overflow: auto;
+  @extend %viewHeight;
+
+  .product_info {
+    float: left;
+    @include products(3, 2%);
+    img {
+      //responsive image sizing
+      width: 9rem;
+      height: auto;
+      float: left;
+    }
+  }
+}

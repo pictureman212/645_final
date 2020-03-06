@@ -94,12 +94,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: red;
+  color: #ff8a28;
 }
 
 header h1 {
   font-weight: 900;
   font-size: 3em;
+  padding-top: 20px;
 }
 
 header p {
@@ -108,57 +109,31 @@ header p {
 }
 
 header .head_main {
-  background: url(../images/wallArt.jpg);
+  background: url(../images/hops.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 header .head_beers {
-  background: url(../images/wallArt.jpg);
+  background: url(../images/hops.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 header .head_tap {
-  background: url(../images/wallArt.jpg);
+  background: url(../images/hops.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 header .head_jobs {
-  background: url(../images/wallArt.jpg);
+  background: url(../images/hops.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.navbar {
-  width: 100%;
-}
-
-.navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.navbar ul li {
-  width: 25%;
-  padding: 1%;
-  background-color: #fed849;
-}
-
-.navbar ul li:hover {
-  background-color: #fecd16;
-}
-
-.navbar ul li a {
-  color: #31302c;
-  font-size: 0.7rem;
 }
 
 body {
@@ -207,56 +182,6 @@ main .link_brewery {
 
 main .link_about {
   background: url(../images/pour.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header {
-  display: flexbox;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #ff8a28;
-}
-
-header h1 {
-  font-weight: 900;
-  font-size: 3em;
-}
-
-header p {
-  font-weight: 700;
-  padding: 2% 0;
-}
-
-header .head_main {
-  background: url(../images/hops.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header .head_beers {
-  background: url(../images/hops.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header .head_tap {
-  background: url(../images/hops.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header .head_jobs {
-  background: url(../images/hops.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

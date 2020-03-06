@@ -1,0 +1,63 @@
+.navbar {
+  width: 100%;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      width: (100% / 4);
+      padding: 1%;
+      background-color: $pale_color;
+
+      &:hover {
+        background-color: darken($pale_color, 10%);
+      }
+      a {
+        color: rOver_txtColor($pale_color);
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+header {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $attention-color;
+  // text-shadow: 1px 0px #000;
+
+  h1 {
+    font-weight: weight(extraBold);
+    font-size: 3em;
+    padding-top: 20px;
+  }
+
+  p {
+    font-weight: weight(bold);
+    padding: 2% 0;
+  }
+
+  .head {
+    &_main {
+      background: url(../images/hops.png);
+      @include bgImage;
+    }
+
+    &_beers {
+      background: url(../images/hops.png);
+      @include bgImage;
+    }
+
+    &_tap {
+      background: url(../images/hops.png);
+      @include bgImage;
+    }
+
+    &_jobs {
+      background: url(../images/hops.jpg);
+      @include bgImage;
+    }
+  }
+}
